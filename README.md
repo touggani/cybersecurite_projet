@@ -23,3 +23,12 @@ L’application utilise une API (The Movie DB – TMDB).
 Par manque de temps, la page de connexion n’a pas pu être fonctionnel. Le vuejs n’utilisant pas de sql, il faut passer par la création d’une api (ex : symphony) et l’appeler avec l’application. Elle sera réalisée prochainement.
 
 ## II-	Sécurité 
+
+
+## III- Lancer le projet à l'aide de Docker
+<br/> - Afin de lancer le projet veuillez cloner le projet sur le repertoire de votre choix:
+<br/>**git clone [lien-projet-git]**
+<br/> - Dans ce même dossier, entrer la commande suivante:
+<br/>**docker build -f Dockerfile -t myapp-prod .**
+<br/> - Puis lancez le projet à l'aide de la commande:
+<br/>**docker run -it -p 80:80 --rm myapp-prod**
