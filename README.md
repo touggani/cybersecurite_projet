@@ -1,3 +1,9 @@
+# Autre projet à réaliser<br/>
+
+## Application de tchat en ligne<br/>
+
+Mon application étant pas assez complet à mon gout, j'aimerais développer une application de tchat en ligne, comprenant une gestion des messages et une gestion des comptes 
+
 # Dockerizing a Vue.js application
 
 ## Bibliothèque cinématographique
