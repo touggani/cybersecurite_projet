@@ -1,28 +1,17 @@
-<html>
-    <head>
-		<title>Messagerie</title>
-		<link rel="stylesheet" type="text/css" href="tchat.css">
-		<script src='jquery/autosize/dist/autosize.js'></script>
-		<script src="jquery/jquery-3.5.0.min.js"></script>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
-	
-    <body>
-    	<div id="messagerie">
-	        <div id="affichage-messages" class="scroll"></div>
+<?php $css = "chat.css"; include "prive/entete.php"; 
+    include "prive/menu-barre.php"; include "DAO/Requete.php"; 
+?>
 
-			<form method="POST" action="traitement.php" id="formulaire">
-			    <textarea name="message" id="message"></textarea>
-			    <a href=""><i id="envoi" class="material-icons">send</i></a>
-			</form>
-		</div>
+<div id="messagerie">
+    <div id="affichage-messages" class="scroll"></div>
+    <form method="POST" action="traitement.php" id="formulaire">
+        <textarea name="message" id="message"></textarea>
+        <a href=""><i id="envoi" class="material-icons">send</i></a>
+    </form>
+</div>
 
-		
-	</body>
 
 <script>
-	console.log("EHEHEHHEHEHE");
-
 	autosize(document.querySelectorAll('textarea'));
 
 	$('#envoi').click(function(e){
@@ -31,10 +20,10 @@
 	    $("#message").val('');
 	    if(message != ""){ // on vérifie que les variables ne sont pas vides
 	        $.ajax({
-	            url : "traitement.php", // on donne l'URL du fichier de traitement
+	            url : "prive/traitement.php", // on donne l'URL du fichier de traitement
 	            type : "POST", // la requête est de type POST
 	            data : "message=" + message // et on envoie nos données
-	        });
+            });
 	        //$('#affichage-messages').append("<p>dit : " + message + "</p>");
 	    }
 	});
@@ -48,16 +37,21 @@
 
 	function receptionMessage(){
 
-  		$.post("charger.php",{},
+  		$.post("prive/charger.php",{},
 	  		function(data, status){
-	  			data = JSON.parse(data);
+                  data = JSON.parse(data);
 	  			if(data.length != messageTableau.length){
 			  		//$('#affichage-messages').prepend(data);
 			  		
 			    	console.log(data);
 			    		$("#affichage-messages").empty();
 				    	for (i in data){
-				    		$('#affichage-messages').append("<p id='m'>"+ data[i].message + "</p>");
+                            if(data[i]["id_exp"] == 9){
+                                $('#affichage-messages').append("<p id='m' class='util-moi'>"+ data[i].message + "</p>");
+                            }
+                            else{
+                                $('#affichage-messages').append("<p id='m' class='util-autre'>"+ data[i].message + "</p>");
+                            }
 				    	}
 				    messageTableau = data;
 				    updateScroll();

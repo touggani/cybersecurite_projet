@@ -17,7 +17,7 @@ class ConnexionBaseDeDonnees{
 	//pour le site web
 	public function __construct(){
 		try{
-			$this->baseDeDonnees = new PDO('mysql:host=localhost;dbname=chat','root','root');
+			$this->baseDeDonnees = new PDO('mysql:host=database:3306;dbname=docker','docker','docker');
 			$this->baseDeDonnees->query('SET NAMES utf8');
 			$this->baseDeDonnees->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);}
 		catch(PDOException $e){

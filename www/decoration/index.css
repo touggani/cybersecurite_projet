@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#block-entete{
+  margin-left: 10%;
+}
+
+#plus-amis {height: 200px;width: 80%;}
+#plus-amis p {float: right;width: 40%;}
+
+#monde {height: 400px;width: 80%;margin-top: 20%;}
+#monde p {float: left;width: 40%;}
+
+#photo {height: 400px;width: 80%;margin-top: 5%;}
+#photo p {float: right;width: 40%;}
+
+
+.material-icons{
+  background-color: rgb(231, 231, 231);
+  padding: 30px 30px;
+}
+
+#block-explication{
+  position: relative;
+  text-align: center;
+  color: black;
+  z-index: 1;
+}
+#block-explication img{
+  width: 116%;
+  height: 40%;
+  margin-left: -10%;
+
+}
+#block-explication h2{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+
+#bonne-annee{
+  background-color: black;
+  position: relative;
+  height: 50%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#bonne-annee p{
+  color: white;
+  position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}

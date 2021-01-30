@@ -1,0 +1,76 @@
+body {
+    overflow: hidden;
+}
+
+#messagerie{border-style: solid;border-color: orange; width: 50%;min-width: 30%;margin-left: auto;
+    margin-right: auto;margin-top: 5%; height: 500px;}
+  
+textarea {
+  padding: 5px;
+  vertical-align: top;
+  width: 70%;
+  border-radius: 10px;
+  resize: none;
+  max-height: 100px;
+}
+  textarea:focus {
+  outline-style: solid;
+  outline-width: 2px;
+}
+#message{
+    max-height: 120px;
+}
+#affichage-messages{
+    width: 95%;
+    height: 70%;
+    margin-top: 15px;
+}
+#formulaire{
+    width: 100%;
+    margin-top: 10%;
+}
+#affichage-messages{
+    margin-left: 10px;
+    margin-top: 5%;
+}
+  
+div.scroll { 
+    overflow-x: hidden; 
+    overflow-x: auto; 
+    text-align:justify; 
+} 
+  
+#envoi{
+    font-size: 50px;
+    color: red;
+    margin-left: 20px;
+}
+  
+#m{border-style: solid;padding-top: 5px;padding-bottom: 5px;padding-left: 5px;border-radius: 10px;width: 70%;}
+  
+  
+@media only screen and (max-device-width: 480px) {
+    #messagerie{width: 100%;height: 95%; margin-left: auto;
+    margin-right: auto;}
+    body{font-size: 60px;overflow: hidden;}
+    #message{font-size: 40px;}
+    #affichage-messages{
+      width: 95%;
+      height: 80%;
+      margin-top: 15px;
+  }
+  #formulaire{
+      width: 100%;
+      margin-top: 2%;
+  }
+}
+  
+  
+.util-moi{
+    right: 0px;
+    background-color: rgb(255, 147, 147);
+}
+.util-autre{
+    left: 0px;
+}
+  
