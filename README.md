@@ -67,6 +67,9 @@ Mon application étant pas assez complet à mon gout, j'aimerais développer une
 
 ### Diagramme Mermaid : Surface d'attaque
 
+<img src="mermaid1.png">
+<img src="mermaid2.png">
+
 
 
 ### Les critères DICT
