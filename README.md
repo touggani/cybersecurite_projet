@@ -12,7 +12,6 @@ Le sujet est le suivant : création d'un site web volontairement vulnérable (**
 ## To-do
 
 - Le projet doit pouvoir être **lancé avec une commande docker** (et donc doit avoir un Dockerfile). 
-   - Si la commande Docker ne fonctionne pas, la note sera sévère parce que je vais pas débugger le code de 30 personnes.
    - La commande doit apparaitre dans /README.md
 - Le projet doit faire apparaitre un **dossier /tests** qui contiendra les tests unitaires qui permettraient de trouver les vulnérabilités dans votre code (vous avez carte blanche sur votre framework de test)
   - Par exemple : Un test d'injection SQL sur un paramètre GET
@@ -25,9 +24,8 @@ Le sujet est le suivant : création d'un site web volontairement vulnérable (**
 - Un fichier Excel avec la même **analyse de sécurité** que le premier TP doit aussi apparaitre.
 
 
-# Autre projet à réaliser<br/>
 
-## Application de tchat en ligne<br/>
+# Application de chat en ligne<br/>
 
 Mon application étant pas assez complet à mon gout, j'aimerais développer une application de tchat en ligne, comprenant une gestion des messages et une gestion des comptes 
 
