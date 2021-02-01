@@ -1,7 +1,7 @@
 # Important
 Le projet réalisé fonctionne mais apres utilisation du git pour le mettre sur mon repertoire, le projet a cessé de fonctionner. Apres de nombreuses heures de réalisations du projet et de debug, la resolution du probleme n'a pas été trouvé. Je vais faire de mon mieux afin de régler le probleme.
 ### update
-</br>Les problèmes liés aux Docker ont été resolue. Le projet peut être lancé correctement.
+</br>Les problèmes liés au Docker ont été resolues. Le projet peut être lancé correctement.
 
 # Contexte
 
