@@ -17,7 +17,6 @@
             header('Location: ../connexion.php');
             exit();
         }
-        echo $_POST['email'];
         $requete = new Requete();
         $requete->enregistrerUtilisateur($_POST['nom_utilisateur'], $_POST['email'], sha1($_POST['mot_de_passe'])); 
         header('Location: ../connexion.php');
