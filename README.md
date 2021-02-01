@@ -55,7 +55,7 @@ Mon application étant pas assez complet à mon gout, j'aimerais développer une
 <br/> - Afin de lancer le projet veuillez cloner le projet sur le repertoire de votre choix:
 <br/>**git clone [lien-projet-git]**
 <br/> - Dans ce même dossier, entrer la commande suivante:
-<br/>**docker-compose build**
+<br/>**docker-compose build** (l'installation peut prendre quelques minutes).
 <br/>**docker-compose up**
 <br/>
 <br/>**Afin de lancer le projet, veuillez avoir dockerhub lancé sur votre machine**
