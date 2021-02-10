@@ -93,5 +93,6 @@ Le chat est un chat anonyme. Les utilisateurs utilisent un mail pour s'identifie
 
 Aucune tracabilité n'est necessaire dans cette application **1/5**.
 
-
+</br></br>
+**Vous trouverez le troisieme jalon sur le document [projet_final_jalon3](projet_final_jalon3.docx)**
 
